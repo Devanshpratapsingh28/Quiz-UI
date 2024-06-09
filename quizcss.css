@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "K2D", sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('PhotoforIEEE.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 35rem;
+    height: 25rem;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.col {
+    text-align: justify;
+    padding: 15px;
+    width: 90%;
+}
+
+.box:hover {
+    outline: 2px solid #6a1b9a; 
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none; 
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+}
+
+input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border: 2px solid #6a1b9a; 
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: #6a1b9a;
+    border-color: #6a1b9a;
+}
+
+input[type="radio"]:checked + label {
+    color: #6a1b9a; 
+}
+
+#submit {
+    height: 2rem;
+    width: 90%;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #6a1b9a; 
+    border: none;
+    cursor: pointer;
+    color: white; 
+}
+
+#submit:hover {
+    background-color: #4a148c;
+}
