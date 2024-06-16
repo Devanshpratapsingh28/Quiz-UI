@@ -90,3 +90,54 @@ input[type="radio"]:checked + label {
 #submit:hover {
     background-color: #4a148c;
 }
+
+/* tab and larger-screen*/
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px;
+    }
+
+    .col {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+}
+
+/* Phones and smaller devices */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .container {
+        width: 95%;
+        height: auto; /* Allow height to adjust based on content */
+        padding: 15px;
+    }
+
+    .col {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input[type="radio"] + label {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    input[type="radio"] + label::before {
+        width: 12px; /* Adjust size for smaller screens */
+        height: 12px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+}
