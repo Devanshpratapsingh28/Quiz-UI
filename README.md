@@ -1,7 +1,7 @@
 
 ## Quiz Website
 
-Welcome to the Quiz Website! This project was created as a part of the IEEE web team using HTML5, CSS3, and JavaScript. It features a user-friendly interface for taking quizzes on various topics.
+Welcome to the Quiz Website! This project is created as a part of the IEEE web team using HTML5, CSS3, and JavaScript. It features a user-friendly interface for taking quizzes on various topics.
 
 ## Features
 
